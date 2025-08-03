@@ -1,9 +1,10 @@
 numpy
 matplotlib
-tensorflow
+tensorflow==2.13.0
 scikit-learn
 pillow
 opencv-python-headless
 ultralytics
 streamlit
+
 
