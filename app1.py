@@ -64,7 +64,7 @@ if uploaded_file or captured_file:
 
                 # Draw bounding box and label
                 draw.rectangle([(x1, y1), (x2, y2)], outline=color, width=3)
-                font = ImageFont.truetype("arial.ttf", size=20) 
+                font = ImageFont.load_default()
                 text_size = draw.textsize(label, font=font)
                 draw.rectangle([ (x1, y1 - text_size[1] - 4), (x1 + text_size[0] + 4, y1) ], fill=color)
                 draw.text((x1 + 2, y1 - text_size[1] - 2), label, fill='white', font=font)
@@ -92,3 +92,4 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
