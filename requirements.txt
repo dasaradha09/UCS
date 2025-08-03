@@ -6,4 +6,3 @@ pillow
 opencv-python
 ultralytics
 streamlit
-opencv-python
