@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 
 # Load models
 detection_model = YOLO("yolov8n.pt")   # for person detection
-classification_model = load_model("MobileNetV2_15.h5")  # for uniform classification
+classification_model = load_model("MobileNetV2_15.keras")  # for uniform classification
 
 # Preprocessing function using PIL
 def preprocess_image(image):
@@ -92,4 +92,5 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
 
